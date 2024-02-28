@@ -25,11 +25,9 @@ body, html {
   align-items: center;
 }
 
-/* .tag-container{
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-} */
+.char-container{
+  line-height: 2rem;
+}
 
 .char-btn{
   color:#fff;
