@@ -14,6 +14,11 @@ input_box.addEventListener("keydown", (event) => {
         tag_container.insertBefore(newTag, input_box)
         input_box.textContent = ""
         event.preventDefault()
+    } else if (event.code === 'Backspace') {
+        if (input_box.textContent === "" && tag_container.childElementCount >= 2) {
+            let tag_to_erase = Array.from(document.querySelectorAll("span:nth-last-of-type(2)")).pop();
+            tag_to_erase.remove();
+        }
     }
     // do something
 });
