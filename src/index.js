@@ -5,6 +5,7 @@ const tag_container = tag_editor.firstElementChild;
 
 input_box.addEventListener("keydown", (event) => {
     if (event.isComposing) return;
+    alert(event.key);
     if (event.key === ' ') {
         let newTag = document.createElement("span");
         newTag.classList.add("char-btn");
